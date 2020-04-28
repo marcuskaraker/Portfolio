@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 12/12/2018 14:43
+    Creation date: 18/04/2018 08:05
     */
 
     @font-face {
@@ -36,16 +36,144 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-printing-photo:before { content: "\f100"; }
-.flaticon-focusing-target:before { content: "\f101"; }
-.flaticon-camera:before { content: "\f102"; }
-.flaticon-polaroid-pictures:before { content: "\f103"; }
-.flaticon-big-lens:before { content: "\f104"; }
-.flaticon-film:before { content: "\f105"; }
+    .flaticon-001-video-game-6:before { content: "\f100"; }
+.flaticon-002-level-4:before { content: "\f101"; }
+.flaticon-003-game-controller:before { content: "\f102"; }
+.flaticon-004-tetris-1:before { content: "\f103"; }
+.flaticon-005-video-game-5:before { content: "\f104"; }
+.flaticon-006-trophy:before { content: "\f105"; }
+.flaticon-007-video-game-4:before { content: "\f106"; }
+.flaticon-008-gamepad-2:before { content: "\f107"; }
+.flaticon-009-newtons-cradle:before { content: "\f108"; }
+.flaticon-010-terrain-6:before { content: "\f109"; }
+.flaticon-011-arcade-1:before { content: "\f10a"; }
+.flaticon-012-football-game:before { content: "\f10b"; }
+.flaticon-013-shooting-game:before { content: "\f10c"; }
+.flaticon-014-tetris:before { content: "\f10d"; }
+.flaticon-015-racing-game:before { content: "\f10e"; }
+.flaticon-016-fighting-game-1:before { content: "\f10f"; }
+.flaticon-017-level-3:before { content: "\f110"; }
+.flaticon-018-vortex:before { content: "\f111"; }
+.flaticon-019-mechanics-1:before { content: "\f112"; }
+.flaticon-020-level-2:before { content: "\f113"; }
+.flaticon-021-gravity:before { content: "\f114"; }
+.flaticon-022-mechanics:before { content: "\f115"; }
+.flaticon-023-joystick:before { content: "\f116"; }
+.flaticon-024-video-game-3:before { content: "\f117"; }
+.flaticon-025-dice:before { content: "\f118"; }
+.flaticon-026-shield:before { content: "\f119"; }
+.flaticon-027-compass:before { content: "\f11a"; }
+.flaticon-028-terrain-5:before { content: "\f11b"; }
+.flaticon-029-level-1:before { content: "\f11c"; }
+.flaticon-030-level:before { content: "\f11d"; }
+.flaticon-031-instructions:before { content: "\f11e"; }
+.flaticon-032-bug:before { content: "\f11f"; }
+.flaticon-033-inventory:before { content: "\f120"; }
+.flaticon-034-video-game-2:before { content: "\f121"; }
+.flaticon-035-video-game-1:before { content: "\f122"; }
+.flaticon-036-blueprint:before { content: "\f123"; }
+.flaticon-037-award:before { content: "\f124"; }
+.flaticon-038-magnet:before { content: "\f125"; }
+.flaticon-039-startup:before { content: "\f126"; }
+.flaticon-040-save:before { content: "\f127"; }
+.flaticon-041-map:before { content: "\f128"; }
+.flaticon-042-game-store:before { content: "\f129"; }
+.flaticon-043-bomb:before { content: "\f12a"; }
+.flaticon-044-explosion:before { content: "\f12b"; }
+.flaticon-045-fighting-game:before { content: "\f12c"; }
+.flaticon-046-movement:before { content: "\f12d"; }
+.flaticon-047-expand:before { content: "\f12e"; }
+.flaticon-048-light:before { content: "\f12f"; }
+.flaticon-049-sun:before { content: "\f130"; }
+.flaticon-050-idea:before { content: "\f131"; }
+.flaticon-051-package:before { content: "\f132"; }
+.flaticon-052-gamepad-1:before { content: "\f133"; }
+.flaticon-053-script:before { content: "\f134"; }
+.flaticon-054-video-camera:before { content: "\f135"; }
+.flaticon-055-maze:before { content: "\f136"; }
+.flaticon-056-mesh:before { content: "\f137"; }
+.flaticon-057-flashlight:before { content: "\f138"; }
+.flaticon-058-tree:before { content: "\f139"; }
+.flaticon-059-terrain-4:before { content: "\f13a"; }
+.flaticon-060-terrain-3:before { content: "\f13b"; }
+.flaticon-061-terrain-2:before { content: "\f13c"; }
+.flaticon-062-terrain-1:before { content: "\f13d"; }
+.flaticon-063-terrain:before { content: "\f13e"; }
+.flaticon-064-arcade:before { content: "\f13f"; }
+.flaticon-065-3d-modeling:before { content: "\f140"; }
+.flaticon-066-video-game:before { content: "\f141"; }
+.flaticon-067-programming:before { content: "\f142"; }
+.flaticon-068-gamepad:before { content: "\f143"; }
+.flaticon-069-health:before { content: "\f144"; }
+.flaticon-070-1-up:before { content: "\f145"; }
     
-    $font-Flaticon-printing-photo: "\f100";
-    $font-Flaticon-focusing-target: "\f101";
-    $font-Flaticon-camera: "\f102";
-    $font-Flaticon-polaroid-pictures: "\f103";
-    $font-Flaticon-big-lens: "\f104";
-    $font-Flaticon-film: "\f105";
+    $font-Flaticon-001-video-game-6: "\f100";
+    $font-Flaticon-002-level-4: "\f101";
+    $font-Flaticon-003-game-controller: "\f102";
+    $font-Flaticon-004-tetris-1: "\f103";
+    $font-Flaticon-005-video-game-5: "\f104";
+    $font-Flaticon-006-trophy: "\f105";
+    $font-Flaticon-007-video-game-4: "\f106";
+    $font-Flaticon-008-gamepad-2: "\f107";
+    $font-Flaticon-009-newtons-cradle: "\f108";
+    $font-Flaticon-010-terrain-6: "\f109";
+    $font-Flaticon-011-arcade-1: "\f10a";
+    $font-Flaticon-012-football-game: "\f10b";
+    $font-Flaticon-013-shooting-game: "\f10c";
+    $font-Flaticon-014-tetris: "\f10d";
+    $font-Flaticon-015-racing-game: "\f10e";
+    $font-Flaticon-016-fighting-game-1: "\f10f";
+    $font-Flaticon-017-level-3: "\f110";
+    $font-Flaticon-018-vortex: "\f111";
+    $font-Flaticon-019-mechanics-1: "\f112";
+    $font-Flaticon-020-level-2: "\f113";
+    $font-Flaticon-021-gravity: "\f114";
+    $font-Flaticon-022-mechanics: "\f115";
+    $font-Flaticon-023-joystick: "\f116";
+    $font-Flaticon-024-video-game-3: "\f117";
+    $font-Flaticon-025-dice: "\f118";
+    $font-Flaticon-026-shield: "\f119";
+    $font-Flaticon-027-compass: "\f11a";
+    $font-Flaticon-028-terrain-5: "\f11b";
+    $font-Flaticon-029-level-1: "\f11c";
+    $font-Flaticon-030-level: "\f11d";
+    $font-Flaticon-031-instructions: "\f11e";
+    $font-Flaticon-032-bug: "\f11f";
+    $font-Flaticon-033-inventory: "\f120";
+    $font-Flaticon-034-video-game-2: "\f121";
+    $font-Flaticon-035-video-game-1: "\f122";
+    $font-Flaticon-036-blueprint: "\f123";
+    $font-Flaticon-037-award: "\f124";
+    $font-Flaticon-038-magnet: "\f125";
+    $font-Flaticon-039-startup: "\f126";
+    $font-Flaticon-040-save: "\f127";
+    $font-Flaticon-041-map: "\f128";
+    $font-Flaticon-042-game-store: "\f129";
+    $font-Flaticon-043-bomb: "\f12a";
+    $font-Flaticon-044-explosion: "\f12b";
+    $font-Flaticon-045-fighting-game: "\f12c";
+    $font-Flaticon-046-movement: "\f12d";
+    $font-Flaticon-047-expand: "\f12e";
+    $font-Flaticon-048-light: "\f12f";
+    $font-Flaticon-049-sun: "\f130";
+    $font-Flaticon-050-idea: "\f131";
+    $font-Flaticon-051-package: "\f132";
+    $font-Flaticon-052-gamepad-1: "\f133";
+    $font-Flaticon-053-script: "\f134";
+    $font-Flaticon-054-video-camera: "\f135";
+    $font-Flaticon-055-maze: "\f136";
+    $font-Flaticon-056-mesh: "\f137";
+    $font-Flaticon-057-flashlight: "\f138";
+    $font-Flaticon-058-tree: "\f139";
+    $font-Flaticon-059-terrain-4: "\f13a";
+    $font-Flaticon-060-terrain-3: "\f13b";
+    $font-Flaticon-061-terrain-2: "\f13c";
+    $font-Flaticon-062-terrain-1: "\f13d";
+    $font-Flaticon-063-terrain: "\f13e";
+    $font-Flaticon-064-arcade: "\f13f";
+    $font-Flaticon-065-3d-modeling: "\f140";
+    $font-Flaticon-066-video-game: "\f141";
+    $font-Flaticon-067-programming: "\f142";
+    $font-Flaticon-068-gamepad: "\f143";
+    $font-Flaticon-069-health: "\f144";
+    $font-Flaticon-070-1-up: "\f145";

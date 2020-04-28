@@ -1,8 +1,7 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 12/12/2018 14:43
+  	Creation date: 18/04/2018 08:05
   	*/
-
 
 @font-face {
   font-family: "Flaticon";
@@ -36,9 +35,73 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-printing-photo:before { content: "\f100"; }
-.flaticon-focusing-target:before { content: "\f101"; }
-.flaticon-camera:before { content: "\f102"; }
-.flaticon-polaroid-pictures:before { content: "\f103"; }
-.flaticon-big-lens:before { content: "\f104"; }
-.flaticon-film:before { content: "\f105"; }
+.flaticon-001-video-game-6:before { content: "\f100"; }
+.flaticon-002-level-4:before { content: "\f101"; }
+.flaticon-003-game-controller:before { content: "\f102"; }
+.flaticon-004-tetris-1:before { content: "\f103"; }
+.flaticon-005-video-game-5:before { content: "\f104"; }
+.flaticon-006-trophy:before { content: "\f105"; }
+.flaticon-007-video-game-4:before { content: "\f106"; }
+.flaticon-008-gamepad-2:before { content: "\f107"; }
+.flaticon-009-newtons-cradle:before { content: "\f108"; }
+.flaticon-010-terrain-6:before { content: "\f109"; }
+.flaticon-011-arcade-1:before { content: "\f10a"; }
+.flaticon-012-football-game:before { content: "\f10b"; }
+.flaticon-013-shooting-game:before { content: "\f10c"; }
+.flaticon-014-tetris:before { content: "\f10d"; }
+.flaticon-015-racing-game:before { content: "\f10e"; }
+.flaticon-016-fighting-game-1:before { content: "\f10f"; }
+.flaticon-017-level-3:before { content: "\f110"; }
+.flaticon-018-vortex:before { content: "\f111"; }
+.flaticon-019-mechanics-1:before { content: "\f112"; }
+.flaticon-020-level-2:before { content: "\f113"; }
+.flaticon-021-gravity:before { content: "\f114"; }
+.flaticon-022-mechanics:before { content: "\f115"; }
+.flaticon-023-joystick:before { content: "\f116"; }
+.flaticon-024-video-game-3:before { content: "\f117"; }
+.flaticon-025-dice:before { content: "\f118"; }
+.flaticon-026-shield:before { content: "\f119"; }
+.flaticon-027-compass:before { content: "\f11a"; }
+.flaticon-028-terrain-5:before { content: "\f11b"; }
+.flaticon-029-level-1:before { content: "\f11c"; }
+.flaticon-030-level:before { content: "\f11d"; }
+.flaticon-031-instructions:before { content: "\f11e"; }
+.flaticon-032-bug:before { content: "\f11f"; }
+.flaticon-033-inventory:before { content: "\f120"; }
+.flaticon-034-video-game-2:before { content: "\f121"; }
+.flaticon-035-video-game-1:before { content: "\f122"; }
+.flaticon-036-blueprint:before { content: "\f123"; }
+.flaticon-037-award:before { content: "\f124"; }
+.flaticon-038-magnet:before { content: "\f125"; }
+.flaticon-039-startup:before { content: "\f126"; }
+.flaticon-040-save:before { content: "\f127"; }
+.flaticon-041-map:before { content: "\f128"; }
+.flaticon-042-game-store:before { content: "\f129"; }
+.flaticon-043-bomb:before { content: "\f12a"; }
+.flaticon-044-explosion:before { content: "\f12b"; }
+.flaticon-045-fighting-game:before { content: "\f12c"; }
+.flaticon-046-movement:before { content: "\f12d"; }
+.flaticon-047-expand:before { content: "\f12e"; }
+.flaticon-048-light:before { content: "\f12f"; }
+.flaticon-049-sun:before { content: "\f130"; }
+.flaticon-050-idea:before { content: "\f131"; }
+.flaticon-051-package:before { content: "\f132"; }
+.flaticon-052-gamepad-1:before { content: "\f133"; }
+.flaticon-053-script:before { content: "\f134"; }
+.flaticon-054-video-camera:before { content: "\f135"; }
+.flaticon-055-maze:before { content: "\f136"; }
+.flaticon-056-mesh:before { content: "\f137"; }
+.flaticon-057-flashlight:before { content: "\f138"; }
+.flaticon-058-tree:before { content: "\f139"; }
+.flaticon-059-terrain-4:before { content: "\f13a"; }
+.flaticon-060-terrain-3:before { content: "\f13b"; }
+.flaticon-061-terrain-2:before { content: "\f13c"; }
+.flaticon-062-terrain-1:before { content: "\f13d"; }
+.flaticon-063-terrain:before { content: "\f13e"; }
+.flaticon-064-arcade:before { content: "\f13f"; }
+.flaticon-065-3d-modeling:before { content: "\f140"; }
+.flaticon-066-video-game:before { content: "\f141"; }
+.flaticon-067-programming:before { content: "\f142"; }
+.flaticon-068-gamepad:before { content: "\f143"; }
+.flaticon-069-health:before { content: "\f144"; }
+.flaticon-070-1-up:before { content: "\f145"; }
