@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Marcus Karåker - Game Developer and Programmer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
+			<h1 id="colorlib-logo"><a href="index.html"><span class="img" style="background-image: url(images/author.jpg);"></span>Marcus Karåker</a></h1>
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>			
+					<li class="colorlib-active"><a href="projects.html">Projects</a></li>
+					<li><a href="merits.html">Merits</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+				</ul>
+			</nav>
+
+		</aside> <!-- END COLORLIB-ASIDE -->
+		<div id="colorlib-main">
+			<section class="ftco-section ftco-bread">
+				<div class="container">
+					<div class="row no-gutters slider-text justify-content-center align-items-center">
+	          <div class="col-md-8 ftco-animate">
+	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span class="mr-2"><a href="projects.html">Projects</a></span> <span>Vestige Bound</span></p>
+	            <h1 class="bread">Vestige Bound Postmortem</h1>
+	          </div>
+	        </div>
+				</div>
+			</section>
+			<section class="ftco-section">
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-lg-8 ftco-animate">
+	            <h2 class="mb-3 font-weight-bold">Introduction</h2>
+	            <p>I suppose many game developers carry around stories of the games that never made it to the finish line. For me, one of those stories is of a game I worked on called Vestige Bound. I worked on it together with a fellow game programming student, next to our studies, almost every day for about a year. Why? Because we believed in the idea. We believed so much that common sense became an afterthought.</p> 
+				<p>What I hope to achieve with this postmortem is to reflect on mistakes made and hopefully help others in avoiding our mistakes.</p>
+	            <p>
+	              <img src="images/twitter_gif_6.gif" alt="" class="img-fluid">
+	            </p>
+	            <h2 class="mb-3 mt-5 font-weight-bold">On Ambitious Games</h2>
+	            <p>As a game developer student I have received a multitude of different advice from developers in the industry. And more often than not, most of them are entirely contradicting. One example of this is the “Make something simple.” and “Be ambitious.”. One side means that the important thing is to ship something while the other means that shipping something without vision and ambition is pointless. We decided we would try to do both, of course.</p>
+				<p>As a quick summary of the game, Vestige Bound was supposed to be a procedural narrative RPG focused on travel. You play as a caravan that has to traverse a hex-grid world, survive hunger and cold while doing missions.</p>
+				<h2 class="mb-3 mt-5 font-weight-bold">The Concept</h2>
+				<p>The project and the idea was conceived from a feeling. Something I had heard developers do before, and I wanted to imitate them. The feeling I chose; the feeling of travel, of being on the road. I think there are several games that do this incredibly well. Notably 80 Days (2014) by Inkle and the oldie but goldie Oregon Trail (1985) by MECC. I wanted to capture this feeling in a more open game, but one that still did not stray too far from the core concept of travel. Vestige Bound was therefore to capture the harsh caravan life of Oregon Trail and the interesting story events of 80 Days in one Civilization-esque hexagon world. </p>
+				<p>
+	              <img src="images/image_betweenmountains.jpg" alt="" class="img-fluid">
+	            </p>
+	            <p>In the game you had a party of four travelers (one of them being the player). It was also composed of two different game states: the Overworld, for traveling, and the Combat Mode, for fighting any enemies on the road. In the Overworld the player could wander to any place they would like, pick up missions and supplies in towns, and fight off wolves and bandits in the woods. At any time, an event could happen to the player. This was represented as a text screen, very much inspired by similar gameplay elements in 80 Days and Crusader Kings II (Paradox Interactive, 2012). </p>
+				<p>When actually meeting an enemy, the Overworld would trade places with a zoomed in, much smaller world acting as a type of arena. Here the game suddenly became a turn-based game featuring your four party members, all with their own unique abilities. </p>
+				<p>
+	              <img src="images/image_mountaintop.gif" alt="" class="img-fluid">
+	            </p>
+				<p>In the overworld one had to think about the hunger and temperature of the party members. The player needed to keep a regular storage of food and adequate clothing, especially when venturing to colder or warmer climates. </p>
+				<p>The goal of the game was never truly decided. Every other update the game changed from having a specific destination at which point the player would win the game to not having a goal at all and back.</p>
+				<h2 class="mb-3 font-weight-bold">Lessons Learned</h2>
+				<p>The main lesson learned from our time working on Vestige Bound was “testing”. We worked on the game for a very long time before it was even playable and at that time we had really never tested the game either on us or someone else. We developed the game only from an idea without any anchor in reality. And who knows, maybe it is possible to do this successfully. But I doubt it. It was impossible for us to know if the game was fun, or if we were even going in the right direction without having tested it frequently. When the game finally became somewhat playable we realised it was so boring and so far down the wrong track that it was too late to do anything about it. </p>
+				<p>
+	              <img src="images/image_leveleditor.gif" alt="" class="img-fluid">
+	            </p>
+				<p>So why did we not test? As I mentioned in the beginning I think it was a too strong belief in the idea of the game. We even voiced concerns during the project that it hadn’t been tested, but we thought “What the hell, it’s probably going to be fine.” Famous last words. </p>
+				<p>Ultimately I think having vision and grand ambition is fine as long as one realises that something in one's head can sound a lot better that it actually is in reality. Now, whenever I have an idea, I ask myself: “Ok, it’s ambitious, that is fine. But can you test it early on? Is it playable within the first few days or week of development?”. If the answer is no, I throw it away. If the answer is yes, the worst thing that could happen is that I’ve wasted a week, not a year. </p>
+				<p>After this lesson, “testing” is a word echoing in my mind when working on any and every project.</p>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/xxHzpCP66e0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	          </div> <!-- .col-md-8 -->
+	    			<div class="col-lg-4 sidebar ftco-animate bg-light">
+
+	            <div class="sidebar-box ftco-animate">
+	              <h3 class="sidebar-heading">Abandoned</h3>
+	              <p>Vestige Bound was eventually abandoned, and there is no plan to develop it further.</p>
+	            </div>
+				
+				<div class="sidebar-box ftco-animate">
+	              <h3 class="sidebar-heading">Follow My Other Projects!</h3>
+	              <p>I'm often sharing my progress in all that I do on <a href="https://Twitter.com/marcuskaraker">my Twitter</a>, feel free to follow me!</p>
+	            </div>
+	          </div><!-- END COL -->
+	    		</div>
+	    	</div>
+	    </section>
+	    <footer class="ftco-footer ftco-bg-dark ftco-section">
+	      <div class="container px-md-5">
+	        <div class="row mb-5">
+	          <div class="col-md">
+	             <div class="ftco-footer-widget mb-4">
+	              <h2 class="ftco-heading-2">Quick Links</h2>
+	              <ul class="list-unstyled categories">
+	              	<li><a href="https://twitter.com/MarcusKaraker">Twitter </a></li>
+	              	<li><a href="https://marcuskaraker.itch.io/">Itch.io </a></li>
+	                <li><a href="https://www.linkedin.com/in/marcuskaraker/">LinkedIn</a></li>
+					<li><a href="https://sketchfab.com/marcuskaraker">Sketchfab</a></li>
+	              </ul>
+	            </div>
+	          </div>
+	          <div class="col-md">
+	            <div class="ftco-footer-widget mb-4">
+	            	<h2 class="ftco-heading-2">Contact Info</h2>
+	            	<div class="block-23 mb-3">
+		              <ul>
+		                <li><span class="icon icon-map-marker"></span><span class="text">Stockholm, Sweden</span></li>
+		                <li><a href="mailto:marcus.karaker.mailbox@gmail.com"><span class="icon icon-envelope"></span><span class="text">marcus.karaker.mailbox@gmail.com</span></a></li>
+		              </ul>
+		            </div>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="row">
+	          <div class="col-md-12">
+
+	            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	          </div>
+	        </div>
+	      </div>
+	    </footer>
+		</div><!-- END COLORLIB-MAIN -->
+	</div><!-- END COLORLIB-PAGE -->
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
