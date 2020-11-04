@@ -48,8 +48,8 @@
 				<div class="container">
 					<div class="row no-gutters slider-text justify-content-center align-items-center">
 	          <div class="col-md-8 ftco-animate">
-	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span class="mr-2"><a href="best_of_projects.html">Projects</a></span> <span>VR Sci Fest 2017</span></p>
-	            <h1 class="bread">VR Sci Fest</h1>
+	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span class="mr-2"><a href="best_of_projects.html">Projects</a></span> <span>Enceladus</span></p>
+	            <h1 class="bread">Enceladus</h1>
 	          </div>
 	        </div>
 				</div>
@@ -58,23 +58,81 @@
 	    	<div class="container">
 	    		<div class="row">
 	    			<div class="col-lg-8 ftco-animate">
-	            <h2 class="mb-3 font-weight-bold">Creating a VR Experience</h2>
-	            <p><a href="https://www.facebook.com/events/vr-scientific-festival/172739496536728/">VR Sci Fest</a> is, according to themselves, an "international festival dedicated to immersive technology in Science and Art" based in Stockholm, Sweden. I got offered, together with a friend, to exhibit a VR experience at the art gallery <a href="https://fargfabriken.se/sv/">Färgfabriken</a> in connection to the festival.</p> 
-				<p>Inspired by Jules Verne's "Twenty Thousand Leagues Under the Sea", our VR experience for the festival was about exploring the ocean with a submarine. You had access to levers controlling speed as well as a big steering wheel all of which you interacted with through the HTC Vive controllers.</p>
-				<iframe src="https://player.vimeo.com/video/218717494" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-				<p><a href="https://vimeo.com/218717494">VR Sci Fest Art (F&auml;rgfabriken)</a> from <a href="https://vimeo.com/user65165608">Martin Soderblom</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-	            <p>Unfortunately not much material from what we did at this exhibition exists. Other than the above video created by my teacher at the time, Martin Söderblom, and some good memories.</p>
+						<p>
+							<iframe width="672" height="378" src="https://www.youtube.com/embed/1l4jaNqRFnc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</p>
+				<h2 class="mb-3 font-weight-bold">What is it?</h2>
+				<p>Enceladus is a rogue-like first-person shooter where you have to traverse procedurally generated levels swarming with hostile crab-like aliens.</p>
+				<p>A geyser has erupted and compromised the lunar base. You play as one of the crew members aboard Etna S; a base conducting research on the moon Enceladus and its inhabitants. Now you must escape the wreckage, fighting off any creatures getting in your way with whatever weapon your luck can offer you.</p> 
+				<div class="row">
+				<div class="col-lg-5 ftco-animate bg-light">
+					<b>Overview</b>
+					<ul>			
+						<li><b>Engine:</b> Unity </li>
+						<li><b>Language:</b> C# </li>
+						<li><b>Platform:</b> PC </li>
+						<li><b>Development Time:</b> 4 months</li>
+						<li><b>Team Size:</b> 15 </li>
+						<li><b>Role:</b> Lead Programmer</li>
+					</ul>
+				</div>
+				<div class="col-lg-1 ftco-animate"></div>
+				<div class="col-lg-5 ftco-animate bg-light">
+					<b>Notable Tasks</b>
+					<ul>			
+						<li> Level Generation </li>
+						<li> Character Controller </li>
+						<li> UI Programming </li>
+						<li> Cross-Discipline Communication </li>
+					</ul>
+				</div>			
+				</div>
+				<br>
+	            <h2 class="mb-3 mt-5 font-weight-bold">Pair Programming</h2>
+	            <p>Enceladus is the biggest project I've ever worked on. We we're 15 people working on the game, all from different diciplines, over a period of about 4 months.</p>
 	            <p>
-	              <img src="images/image_submarine.jpg" alt="" class="img-fluid">
-	            </p>
-				<p>The screenshot shows the underwater environment that you got to traverse inside the submarine. At the end of the project we were two programmers (one of them me) and one 3D artist. All in all, the entire project was made in about two weeks.</p>
+					In total, we were three programmers on the project. Collectivly we decided to start off by doing pair programming (or Tri Programming I guess) so that everyone would have an idea of how the game worked at its core.
+					This turned out to be a great strategy as we all could discuss what our plans were, code standards and design patterns while programming the base of the game. It also made it easier to define the coming tasks, their estimated time and 
+					for each programmer to claim them respectivly.  
+				</p>
+	            <p>
+	              <img src="images/image_enceladus1.png" alt="" class="img-fluid">
+				</p>
+				<h2 class="mb-3 mt-5 font-weight-bold">Level Generation</h2>
+				<p>The level generation was my main responsibility during the project. The idea was that the designers would put together pre-made rooms that would later be connected via their door slots to other door slots.</p>
+	            <p>
+					There were two main issues with this approach. Firstly, since the level was not on a grid, we had to solve the issue that a door slot is turned towards another room. We can obviouslty not put a room there. 
+					Our first idea was to generate ladders or stairs at these places so that the level would continue above or below the room that was in the way. This turned out to not work very well as the space that was between the door slot and the 
+					obstructing room was always different. Instead we solved it by simply putting a locked door (and made it clearly red to make that visable) in that spot and it seemed that the testers never reacted badly to it.
+				</p>
+				<p>
+					The second main issue was making the level connect to itself, in order to create loops in the level. If the level had been generated on a grid, this would have been rather a simple issue to solve. 
+					However, since the rooms never really lined up with eachother, it was very difficult to connect them. In retrospect, I would probably have opted to generate it on a grid to begin with, or, if I wanted to keep
+					the it to the organic way of slapping together door slots, I would probably have looked into procedural meshes in order to connect the doors properly.
+				</p>
+				<p>
+					A solution to this issue was creating vents around the level that would let the player "teleport" to another 'branch' of the level. 
+					This was however not implemented in the final version of the game. In the end this was an issue that wasn't truly solved.
+				</p>
+				<p>
+	              <img src="images/image_enceladus2.png" alt="" class="img-fluid">
+				</p>
+				<h2 class="mb-3 mt-5 font-weight-bold">Lead Programmer</h2>
+	            <p>
+					Lead roles are usually senior developers with a lot of experience. But for Enceladus the only reason we had lead roles was to make communication between the disciplines smoother and faster.
+					It was not the leads role to make decisions for everyone, rather it was a role encapsulating many meetings with the leads from the other disciplines as well as planning.
+				</p>
+				<p>
+					It was interesting to not spend all of my time programming, but also get to use my love for communication in the work that I do. An example of a lead meeting would be that the designers would want a feature and me or the Lead 3D artist would say that it was viable or not for our discipline to do. 
+					It made our communcation a lot smoother and our time more productive, since not everyone had to be on those meetings. 
+				</p>
 
 	          </div> <!-- .col-md-8 -->
 	    			<div class="col-lg-4 sidebar ftco-animate bg-light">
-
-	            <div class="sidebar-box ftco-animate">
-	              <h3 class="sidebar-heading">VR Jam</h3>
-	              <p>The idea for this project emerged during a VR Art Jam hosted by Joel Dittrich and Martin Söderblom.</p>
+				
+				<div class="sidebar-box ftco-animate">
+	              <h3 class="sidebar-heading">Follow the Development!</h3>
+	              <p>I'm often sharing my progress in all that I do on <a href="https://Twitter.com/marcuskaraker">my Twitter</a>, feel free to follow me!</p>
 	            </div>
 	          </div><!-- END COL -->
 	    		</div>

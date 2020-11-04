@@ -37,9 +37,8 @@
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
 					<li><a href="index.html">Home</a></li>			
-					<li class="colorlib-active"><a href="projects.html">Projects</a></li>
+					<li class="colorlib-active"><a href="best_of_projects.html">Projects</a></li>
 					<li><a href="merits.html">Merits</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
 				</ul>
 			</nav>
 
@@ -49,8 +48,8 @@
 				<div class="container">
 					<div class="row no-gutters slider-text justify-content-center align-items-center">
 	          <div class="col-md-8 ftco-animate">
-	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span class="mr-2"><a href="projects.html">Projects</a></span> <span>Vestige Bound</span></p>
-	            <h1 class="bread">Vestige Bound Postmortem</h1>
+	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span class="mr-2"><a href="best_of_projects.html">Projects</a></span> <span>Vestige Bound</span></p>
+	            <h1 class="bread">Vestige Bound</h1>
 	          </div>
 	        </div>
 				</div>
@@ -58,16 +57,45 @@
 			<section class="ftco-section">
 	    	<div class="container">
 	    		<div class="row">
-	    			<div class="col-lg-8 ftco-animate">
+				<div class="col-lg-8 ftco-animate">
+					<p>
+						<img src="images/twitter_gif_6.gif" alt="" class="img-fluid">
+					</p>
+					<h2 class="mb-3 font-weight-bold">What is it?</h2>
+					<p>Vestige Bound is a procedural narrative RPG focused on travel. You play as a caravan that has to traverse a hex-grid world, survive hunger and cold and fight bandits in turn-based combat.</p>
+					<div class="row">
+						<div class="col-lg-5 ftco-animate bg-light">
+							<b>Overview</b>
+							<ul>			
+								<li><b>Engine:</b> Unity </li>
+								<li><b>Language:</b> C# </li>
+								<li><b>Platform:</b> PC </li>
+								<li><b>Development Time:</b> 9 months </li>
+								<li><b>Team Size:</b> 2 </li>
+								<li><b>Role:</b> Programmer/Designer/Artist </li>
+							</ul>
+						</div>
+						<div class="col-lg-1 ftco-animate"></div>
+						<div class="col-lg-5 ftco-animate bg-light">
+							<b>Notable Tasks</b>
+							<ul>			
+								<li> Moddable Game Architecture </li>
+								<li> Serialization System </li>
+								<li> Level Creation System </li>
+								<li> Overworld AI behaviours </li>								
+								<li> UI </li>
+							</ul>
+						</div>			
+						</div>
+				<h1 class="mb-3 font-weight-bold">Postmortem</h1>
 	            <h2 class="mb-3 font-weight-bold">Introduction</h2>
-	            <p>I suppose many game developers carry around stories of the games that never made it to the finish line. For me, one of those stories is of a game I worked on called Vestige Bound. I worked on it together with a fellow game programming student, next to our studies, almost every day for about a year. Why? Because we believed in the idea. We believed so much that common sense became an afterthought.</p> 
+	            <p>I suppose many game developers carry around stories of the games that never made it to the finish line. For me, one of those stories is of a game I worked on called Vestige Bound. I worked on it together with a fellow game programming student, next to our studies, almost every day for about a year. Why? Because we believed in the idea and we were digging ourselves further and further into a hole.</p> 
 				<p>What I hope to achieve with this postmortem is to reflect on mistakes made and hopefully help others in avoiding our mistakes.</p>
 	            <p>
-	              <img src="images/twitter_gif_6.gif" alt="" class="img-fluid">
+	              <img src="images/image_vestigeboundcombat.gif" alt="" class="img-fluid">
 	            </p>
 	            <h2 class="mb-3 mt-5 font-weight-bold">On Ambitious Games</h2>
 	            <p>As a game developer student I have received a multitude of different advice from developers in the industry. And more often than not, most of them are entirely contradicting. One example of this is the “Make something simple.” and “Be ambitious.”. One side means that the important thing is to ship something while the other means that shipping something without vision and ambition is pointless. We decided we would try to do both, of course.</p>
-				<p>As a quick summary of the game, Vestige Bound was supposed to be a procedural narrative RPG focused on travel. You play as a caravan that has to traverse a hex-grid world, survive hunger and cold while doing missions.</p>
 				<h2 class="mb-3 mt-5 font-weight-bold">The Concept</h2>
 				<p>The project and the idea was conceived from a feeling. Something I had heard developers do before, and I wanted to imitate them. The feeling I chose; the feeling of travel, of being on the road. I think there are several games that do this incredibly well. Notably 80 Days (2014) by Inkle and the oldie but goldie Oregon Trail (1985) by MECC. I wanted to capture this feeling in a more open game, but one that still did not stray too far from the core concept of travel. Vestige Bound was therefore to capture the harsh caravan life of Oregon Trail and the interesting story events of 80 Days in one Civilization-esque hexagon world. </p>
 				<p>
@@ -88,7 +116,7 @@
 				<p>So why did we not test? As I mentioned in the beginning I think it was a too strong belief in the idea of the game. We even voiced concerns during the project that it hadn’t been tested, but we thought “What the hell, it’s probably going to be fine.” Famous last words. </p>
 				<p>Ultimately I think having vision and grand ambition is fine as long as one realizes that something in one's head can sound a lot better than it actually is in reality. Now, whenever I have an idea, I ask myself: “Ok, it’s ambitious, that is fine. But can you test it early on? Is it playable within the first few days or week of development?”. If the answer is no, I throw it away. If the answer is yes, the worst thing that could happen is that I’ve wasted a week, not a year. </p>
 				<p>After this lesson, “testing” is a word echoing in my mind when working on any and every project.</p>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/xxHzpCP66e0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="672" height="378" src="https://www.youtube.com/embed/xxHzpCP66e0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	          </div> <!-- .col-md-8 -->
 	    			<div class="col-lg-4 sidebar ftco-animate bg-light">
 
